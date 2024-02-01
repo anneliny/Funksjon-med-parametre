@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funksjon med parametre</title>
+</head>
+<body>
+    <div id="textDiv"><b>Dette er en spennende tekst.</b></i></div>
+    <div id="btns">
+    <button onclick="btn('lightblue', 'Bare tulla', '30')">Trykk på meg!</button>
+    <button onclick="btn('lightgreen','Loooser','100')">Nei, trykk på meg!</button>
+    </div>
+
+    <script>
+function btn(color, text, fontSize){
+           
+           document.getElementById('textDiv').innerHTML = /*html*/`
+           <div style="background-color: ${color}; font-size: ${fontSize}pt">${text}</div>
+           `;
+}
+    </script>
+
+    <style>
+        body {
+            margin: 200px;
+            background-color: rgb(240, 240, 209);
+        }
+        button {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: blanchedalmond;
+        
+            
+        }
+        #btns {
+        display: flex;
+        justify-content: center;
+        justify-content:space-between
+    
+        }
+        #textDiv {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 10px;
+            color:rgb(62, 41, 26);
+            border: double black; 
+            padding: 20px;
+        }
+    </style>
+
+</body>
+
+</html>
